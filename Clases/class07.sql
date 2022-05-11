@@ -20,7 +20,7 @@ SELECT f1.title, f1.rating
 		WHERE f1.film_id <> f2.film_id);
 
 /*3*/
-SELECT CONCAT(firt_name, last_name) AS 'Nombre completo', first_name, last_name,
+SELECT first_name, last_name,
 	(SELECT DISTINCT(amount)
           FROM payment p
          WHERE customer.customer_id = p.customer_id 
